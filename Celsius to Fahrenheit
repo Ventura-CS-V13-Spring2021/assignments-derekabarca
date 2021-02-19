@@ -1,4 +1,4 @@
-#iclude <iostream>
+#include <iostream>
 
 using namespace std; 
 int main() {
@@ -7,4 +7,4 @@ int main() {
   float T = ((C * 9/5) + 32)
   cout << "Temperature in Fahrenheit = " << T<< "\370" << "F" << endl;
   return 0;
-  
+}

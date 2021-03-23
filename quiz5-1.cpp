@@ -2,12 +2,14 @@
 using namespace std;
 
 int main() {
-    int i;
-    i=5;
-    while (i>=5){
-        cout << (rand() % 100) << endl;
+
+     int i, nums;
+
+    for (i=0; i<=4; i++)
+    {
+        nums = (rand() % 100);
+        cout << nums << endl;
     }
 
 
     return 0;
-}

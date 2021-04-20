@@ -1,0 +1,12 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+
+    string stdName;
+    int twoScores;
+    ifstream inFile("students.txt");
+
+    return 0;
+}

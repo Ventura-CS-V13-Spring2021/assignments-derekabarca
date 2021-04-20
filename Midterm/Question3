@@ -48,12 +48,21 @@ using namespace std;
 int main() {
      
      int num1, num2, num3;
+     int result;
 
+    ofstream ofs;
+    ofs.open("question3.txt");
+    if (ofs.fail()){
+        cerr << "Error ocurred while trying to open the file. " << endl;
+        exit(0);
+    }
 
-    cout << getRdnum();
-
-
-
-
-    return 0;
+    while (1){
+        
+        getRdnum();
+        if (getDifference(num1, num2, num3))
+            break;
+        result = getDifference(num1, num2, num3);
+        fileWrite(ofs, reuslt);
+    }
 }

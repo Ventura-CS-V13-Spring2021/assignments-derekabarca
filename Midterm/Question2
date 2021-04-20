@@ -1,0 +1,32 @@
+#include <iostream>
+#include <fstream>
+#include <cstdlib>
+#include <ctime>
+
+using namespace std;
+
+int getRdnum(void){
+    srand(time(0));
+    for (int x = 1; x <= 10; x++){
+        cout << 1 + (rand() % 50);
+        return x;
+    }
+}
+
+int isGreater(int n);
+
+int main() {
+
+    ofstream. ofs;
+    ofs.open("numbers.txt");
+    if (ofs.fail()){
+        cout << "Error ocurred while trying to opne file. " << endl;
+        exit(0);
+    }
+    while(1){
+        getRdnum();
+        
+    }
+
+    return 0;
+}

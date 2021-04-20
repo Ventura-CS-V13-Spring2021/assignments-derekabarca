@@ -17,10 +17,8 @@ int main() {
 
     inFile >> stdName;
     inFile >> twoScores;
-    //getline(inFile, stdName);
-    //getline(inFile, twoScores);
-    //cout << stdName << endl << twoScores << endl;
     
-
+    //got stuck on the code, I know what I am supposed to do, but not sure how to do it, and I do not want to cheat.
+    
     return 0;
 }

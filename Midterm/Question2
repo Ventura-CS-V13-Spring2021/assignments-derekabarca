@@ -14,10 +14,13 @@ int getRdnum(void){
 }
 
 int isGreater(int n);
+void fileWrite (ofstream &, int);
 
 int main() {
 
-    ofstream. ofs;
+    int result;
+
+    ofstream ofs;
     ofs.open("numbers.txt");
     if (ofs.fail()){
         cout << "Error ocurred while trying to opne file. " << endl;
@@ -25,7 +28,10 @@ int main() {
     }
     while(1){
         getRdnum();
-        
+        if (isGreater()){
+            fileWrite(ofs, result);
+        }
+
     }
 
     return 0;

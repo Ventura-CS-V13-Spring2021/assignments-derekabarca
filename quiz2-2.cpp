@@ -4,6 +4,7 @@ using namespace std;
 int main() {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
      int i, a, b, c, d, e;
 
     for (i=0; i<=5; i+=10)
@@ -27,6 +28,8 @@ int main() {
     return 0;
 }
 =======
+=======
+>>>>>>> origin/main
     int num, i, range1, range2;
 
     cout << "Enter your range from 1-100:\n ";
@@ -46,4 +49,7 @@ int main() {
     
     return 0;
 }
+<<<<<<< HEAD
+>>>>>>> origin/main
+=======
 >>>>>>> origin/main

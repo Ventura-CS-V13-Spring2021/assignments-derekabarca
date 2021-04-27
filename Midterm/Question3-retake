@@ -5,7 +5,7 @@
 
 using namespace std;
 
-int filewrite(ofstream &, int);
+void filewrite(ofstream &, int);
 int getRdnum();
 int findMin(int, int, int);
 int findMax(int, int, int);
@@ -32,8 +32,8 @@ int main(){
         cout << "Number 1: " << num1 << endl;
         cout << "Number 2: " << num2 << endl;
         cout << "Number 3: " << num3 << endl;
-        cout << "Min number is: " << min << endl;
         cout << "Max number is: " << max << endl;
+        cout << "Min number is: " << min << endl;
         cout << "Difference is: " << diff << endl;
         filewrite(write, diff); //can't be less than 3
         
@@ -96,4 +96,8 @@ int getDiff(int max, int min)
     int diff;
     diff = max - min;
     return diff;
+}
+void filewrite(ofstream& write, int diff)
+{
+    write << diff << endl;
 }

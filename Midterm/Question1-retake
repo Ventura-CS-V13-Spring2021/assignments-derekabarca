@@ -13,7 +13,7 @@ int main(){
     double average;
     
     ifstream read;
-    read.open("stuednts.txt");
+    read.open("students.txt");
     while (read >> name >> test1 >> test2)
     {
         sum = test1 + test2;
@@ -22,8 +22,10 @@ int main(){
         {
             greater++;
         }
+        cout << " Student name: " << name << " Score 1: " << test1 << " Score 2: " << test2 << " Sum: " << sum;
+        cout << "Average: " << average << endl;
     }
-    cout << " Student name: " << name << " Score 1: " << test1 << " Score 2: " << test2 << " Sum: " << sum; << "Average: "
+    cout << "The total number of students who has the average > 80: " << greater << endl;
+    read.close();
 }
-
 

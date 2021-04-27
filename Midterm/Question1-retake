@@ -1,0 +1,29 @@
+#include <iostream>
+#include <string>
+#include <fstream>
+
+using namespace std;
+
+int main(){
+    
+    int test1, test2, greater;
+    string name;
+    greater = 0;
+    double sum = 0;
+    double average;
+    
+    ifstream read;
+    read.open("stuednts.txt");
+    while (read >> name >> test1 >> test2)
+    {
+        sum = test1 + test2;
+        average = sum/2.0;
+        if(sum>80)
+        {
+            greater++;
+        }
+    }
+    cout << " Student name: " << name << " Score 1: " << test1 << " Score 2: " << test2 << " Sum: " << sum; << "Average: "
+}
+
+

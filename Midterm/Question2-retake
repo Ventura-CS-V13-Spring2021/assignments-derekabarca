@@ -6,12 +6,42 @@
 using namespace std;
 
 int getRdnum(void);
-int isGreater(int, int);
+int isGreater(int);
 
 int main(){
     
+    int i, num, preceding, N;
+    
+    N = 10;
+    srand(time(0));
+    
+    ofstream write;
+    write.open("numbers.txt");
+    if (write.fail())
+        {
+            cerr << "Error.";
+            exit(0);
+        }
+    preceding = rand() % 51;
+    for(i=1; i<N; i++)
+    {
+        num = getRdnum();
+        if(isGreater(num))
+        {
+            write << num << endl;
+        }
+        preceding = num;
+        write.close();
+    }
+}
+int getRdnum(void)
+{
+    int num;
+    num = rand() % 51;
     
 }
+
+
 
 
 

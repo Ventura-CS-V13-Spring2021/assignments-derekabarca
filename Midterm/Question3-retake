@@ -1,0 +1,16 @@
+#include <iostream>
+#include <ctime>
+#include <cstdlib>
+#include <fstream>
+
+using namespace std;
+
+int filewrite(ofstream &, int);
+int getRdnum();
+int findMin(int, int, int);
+int findMax(int, int, int);
+
+int main(){
+    
+    
+}

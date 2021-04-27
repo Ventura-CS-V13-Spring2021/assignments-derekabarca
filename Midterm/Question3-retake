@@ -35,9 +35,65 @@ int main(){
         cout << "Min number is: " << min << endl;
         cout << "Max number is: " << max << endl;
         cout << "Difference is: " << diff << endl;
+        filewrite(write, diff); //can't be less than 3
         
-
+        while(diff < 3)
+        {
+            write.close();
+        }
     }
-    
-    
+}
+
+int getRdnum()
+{
+    int num = rand() % 10;
+    return num;
+}
+int findMin(int num1, int num2, int num3)
+{
+    int min;
+    if (num1 < num2 && num1 < num3)
+        {
+            min = num1;
+        }
+        else;
+        if (num2 < num1 && num2 < num3)
+        {
+            min = num2;
+        }
+        else;
+        if (num3 < num1 && num3 < num2)
+        {
+            min = num3;
+        }
+    return min;
+}
+int findMax(int num1, int num2, int num3)
+{
+    int max;
+    if (num1 == num2 && num1 == num3 && num2 == num3)
+        {
+            cout << "All numbers are equal, run again. \n";
+        }
+        if (num1 > num2 || num1 == num2 && num1 > num3)
+        {
+            max = num1;
+        }
+        else;
+        if (num2 > num1 && num2 > num3)
+        {
+            max = num2;
+        }
+        else;
+        if (num3 > num1 || num3 == num1 && num3 > num2)
+        {
+            max = num3;
+        }
+    return max;
+}
+int getDiff(int max, int min)
+{
+    int diff;
+    diff = max - min;
+    return diff;
 }

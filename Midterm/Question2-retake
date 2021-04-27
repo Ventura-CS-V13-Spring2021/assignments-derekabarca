@@ -1,0 +1,17 @@
+#include <iostream>
+#include <ctime>
+#include <cstdlib>
+#include <fstream>
+
+using namespace std;
+
+int getRdnum(void);
+int isGreater(int, int);
+
+int main(){
+    
+    
+}
+
+
+

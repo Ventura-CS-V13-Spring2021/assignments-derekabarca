@@ -6,11 +6,11 @@
 using namespace std;
 
 int getRdnum(void);
-int isGreater(int);
+int isGreater(int num);
 
 int main(){
     
-    int i, num, preceding, N;
+    int num, preceding, N;
     
     N = 10;
     srand(time(0));
@@ -23,7 +23,7 @@ int main(){
             exit(0);
         }
     preceding = rand() % 51;
-    for(i=1; i<N; i++)
+    for(int i=1; i<=N; i++)
     {
         num = getRdnum();
         if(isGreater(num))
@@ -38,7 +38,19 @@ int getRdnum(void)
 {
     int num;
     num = rand() % 51;
-    
+    cout << num << endl;
+    return num;
+}
+int isGreater(int num)
+{
+    int preceding = -1;
+    if(preceding == -1)
+    {
+        num = preceding;
+        return 1;
+    }
+    else
+        return 0;
 }
 
 

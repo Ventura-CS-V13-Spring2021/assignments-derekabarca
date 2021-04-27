@@ -9,8 +9,35 @@ int filewrite(ofstream &, int);
 int getRdnum();
 int findMin(int, int, int);
 int findMax(int, int, int);
+int getDiff(int, int);
 
 int main(){
+    
+    int num1, num2, num3, min, max, diff;
+    ofstream write;
+      write.open("question3.txt");
+    if (write.fail())
+        {
+            cerr << "Error while trying to open file. \n";
+            exit(0);
+        }
+      srand(time(0));
+    {
+        num1 = getRdnum();
+        num2 = getRdnum();
+        num3 = getRdnum();
+        min = findMin(num1, num2, num3);
+        max = findMax(num1, num2, num3);
+        diff = getDiff(min, max);
+        cout << "Number 1: " << num1 << endl;
+        cout << "Number 2: " << num2 << endl;
+        cout << "Number 3: " << num3 << endl;
+        cout << "Min number is: " << min << endl;
+        cout << "Max number is: " << max << endl;
+        cout << "Difference is: " << diff << endl;
+        
+
+    }
     
     
 }

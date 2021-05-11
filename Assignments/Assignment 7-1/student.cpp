@@ -49,5 +49,5 @@ void Student::printStudent()
   cout << "Student name and ID: " << sname << " " << id << endl;
   address.printAddress(); 
   dob.printDate(); 
-  cout << " " << en
+  cout << " " << endl;
 }

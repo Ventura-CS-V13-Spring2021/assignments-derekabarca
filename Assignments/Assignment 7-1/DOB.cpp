@@ -22,7 +22,7 @@ int DOB::getYear() const;
 }
 void DOB::printDate() const;
 {
-  cout << "Date (MM/DD/YYYY): "
+  cout << "Date (MM/DD/YYYY): ";
   cout << month << "/" << day << "/" << year << "." << endl;
 }
 //Prints DOB in MM/DD/YYYY format 

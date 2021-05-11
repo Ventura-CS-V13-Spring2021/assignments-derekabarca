@@ -25,6 +25,6 @@ void Coordinate::setXY(double xval, double yval)
 }
 void Coordinate::printXY() const
 {
-  cout << "x: " << x << endl;
-  cout << "y: " << y << endl;
+  cout << "(x,y): " << "(" << x << "," << y << ")";
+  cout << endl;
 }

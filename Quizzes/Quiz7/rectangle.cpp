@@ -36,10 +36,17 @@ void Rectangle::setLBRT(Coordinate lbval, Coordinate rtval)
 }
 void Rectangle::printRectangle() const
 {
-  cout << "Bottom left point: "
+  cout << "Bottom left point: ";
   lb.printXY();
   cout << endl;
-  cout << "Top right point: "
+
+  cout << "Top right point: ";
   rt.printXY();
   cout << endl;
+
+  cout << "Center point: ";
+  center.printXY();
+  cout << endl;
+
+  cout << "Area of rectangle: " << area << endl;
 }

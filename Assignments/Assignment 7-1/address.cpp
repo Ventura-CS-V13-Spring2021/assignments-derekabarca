@@ -31,3 +31,21 @@ void Address::printAddress() const
   cout << "Zipcode: " << zip << endl;
   cout << " " << endl;
 }
+void Address::setStreet(string addr)
+{
+  street = addr;
+}
+void Address::setState(string st)
+{
+  state = st;
+}
+void Address::setZip(int z)
+{
+  zip = z;
+}
+void Address::setAddress(string addr, string st, int z)
+{
+  street = addr;
+  state = st;
+  zip = z;
+}

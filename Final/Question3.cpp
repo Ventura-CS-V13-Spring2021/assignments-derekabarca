@@ -5,6 +5,10 @@ using namespace std;
 class Student 
 {
   public:
+  Student();
+  Student(int num, string name);
+  Student(Student &rhs);
+  //really stuck, don't know what to do 
 
 
 

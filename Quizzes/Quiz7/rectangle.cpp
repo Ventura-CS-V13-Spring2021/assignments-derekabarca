@@ -6,8 +6,8 @@ using namespace std;
 
 Rectangle::Rectangle()
 {
-  coordinate x;
-  coordinate y;
+  Coordinate x;
+  Coordinate y;
   setLBRT(x,y);
 }
 Rectangle::Rectangle(Coordinate lbval, Coordinate rtval): lb(lbval), rt(rtval)

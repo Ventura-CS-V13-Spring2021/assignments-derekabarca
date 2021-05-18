@@ -11,7 +11,13 @@ int main(){
   int arr[6] = {1, 2, 4, 6, 10, 24};
 
   greatestNum = getNumDiv(arr, 6);
-  cout << greatestNum;
+  cout << "Greatest number of divisible elements is: " << greatestNum << ": " << arr[greatestNum] << endl;
+  
+  return 0;
 
+}
 
+int getNumDiv(int x[], int elms)
+{
+  int 
 }

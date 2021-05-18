@@ -5,6 +5,7 @@ using namespace std;
 
 int getNumDiv(int x[], int elms);
 
+
 int main(){
 
   int greatestNum;

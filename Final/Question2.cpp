@@ -7,18 +7,18 @@ int main(){
 
   int arr[] = {-20, 2, 5, -4, -19, 14, 21, 9, 6, -8, -12};
   int count = 1;
-    int arrSize = sizeof(arr)/sizeof(arr[0]);
+  int arrSize = sizeof(arr)/sizeof(arr[0]);
 
   cout << "N " << " Count" << endl;
   for(int i=0; i<arrSize; i++)
   {
-    if(arr[i] == arr[i+1])
+    if(arr[i] == arr[i+1] || arr[i] == arr[i-1])
     count++;
     else
     {
       count = 1;
     }
-    cout << arr[i] << "   " << count << endl;
+    cout << arr[i] << "     " << count << endl;
   }
 
 

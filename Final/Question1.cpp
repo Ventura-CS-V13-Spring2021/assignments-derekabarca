@@ -19,5 +19,19 @@ int main(){
 
 int getNumDiv(int x[], int elms)
 {
-  int 
+  int mostFactors;
+  int highestNum;
+  int factors = 0;
+
+  for(int i = 0; i<elms, i++)
+  {
+    factors = 0;
+    for (int j = 1; j<x[i]; j++)
+    {
+      if (x[i]%j == 0)
+      {
+        
+      }
+    }
+  }
 }
